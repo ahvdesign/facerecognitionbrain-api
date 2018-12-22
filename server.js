@@ -49,5 +49,5 @@ app.put('/image', image.handleImage(knex));
 app.post('/imageurl', image.handleApiCall);
 
 app.listen(process.env.PORT, () => {
-  console.log(`Server is running on port ${process.end.PORT}`);
+  console.log(`Server is running on port ${process.env.PORT}`);
 });
