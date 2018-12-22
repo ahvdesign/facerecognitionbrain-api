@@ -48,6 +48,6 @@ app.get('/profile/:id', (req, res) => {
 app.put('/image', image.handleImage(knex));
 app.post('/imageurl', image.handleApiCall);
 
-app.listen(3001, () => {
-  console.log('Server is running on port 3001');
+app.listen(process.env.PORT, () => {
+  console.log(`Server is running on port ${process.end.PORT}`);
 });
